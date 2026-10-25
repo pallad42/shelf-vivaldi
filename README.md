@@ -18,7 +18,10 @@
 </p>
 
 <p align="center">
-  <img src="docs/shelf.jpg" width="900" alt="Shelf: bookmark folders as glass cards over a mountain wallpaper, with a clock, weather and page dots">
+  <img src="docs/shelf.gif" width="900" alt="Shelf: swiping between the Work, Home and Learn bookmark spaces over a mountain wallpaper, with a clock and weather">
+</p>
+<p align="center">
+  <sub>Wallpaper: <a href="https://unsplash.com/photos/a-snowy-mountain-range-behind-a-lake-aPvHNtnUTHY">a snowy mountain range behind a lake</a> by Jaron Mobley on Unsplash</sub>
 </p>
 
 ## Features

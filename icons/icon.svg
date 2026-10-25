@@ -1,15 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- Shelf: pastel bookmarks standing on a white shelf, the last one leaning on its neighbour -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3a3b44"/>
-      <stop offset="1" stop-color="#232327"/>
+    <!-- Graphite tile, a touch lighter at the top -->
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d2d33"/>
+      <stop offset="1" stop-color="#1f1f24"/>
     </linearGradient>
+    <linearGradient id="lavender" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d3c8f0"/>
+      <stop offset="1" stop-color="#c3b4e8"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0bfd3"/>
+      <stop offset="1" stop-color="#d895b4"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9c6d8"/>
+      <stop offset="1" stop-color="#8fb3c9"/>
+    </linearGradient>
+    <clipPath id="clip"><rect x="3" y="3" width="34" height="34" rx="10"/></clipPath>
   </defs>
-  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)"/>
-  <rect x="4.5" y="4.5" width="119" height="119" rx="27.5" fill="none" stroke="#fff" stroke-opacity="0.1"/>
-  <!-- three bookmarks standing on a shelf -->
-  <path d="M30 40h18v46l-9-6-9 6z" fill="#e8e8ea" fill-opacity="0.55"/>
-  <path d="M55 28h18v58l-9-6-9 6z" fill="#6b8afd"/>
-  <path d="M80 48h18v38l-9-6-9 6z" fill="#e8e8ea" fill-opacity="0.8"/>
-  <rect x="22" y="92" width="84" height="7" rx="3.5" fill="#e8e8ea"/>
+
+  <g clip-path="url(#clip)">
+    <rect x="3" y="3" width="34" height="34" fill="url(#tile)"/>
+  </g>
+
+  <!-- bookmarks: a ribbon with a notch at the bottom -->
+  <path d="M10 13 H15 V27.5 L12.5 25.8 L10 27.5 Z" fill="url(#lavender)"/>
+  <path d="M16.5 9 H21.5 V27.5 L19 25.8 L16.5 27.5 Z" fill="url(#pink)"/>
+  <path d="M23 15 H28 V27.5 L25.5 25.8 L23 27.5 Z" fill="url(#blue)" transform="rotate(-14 23 27.5)"/>
+  <!-- soft highlight on the tallest one -->
+  <path d="M17.6 10.5 V20" stroke="#ffffff" stroke-opacity="0.5" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- the shelf -->
+  <rect x="8" y="28.6" width="24" height="2" rx="1" fill="#f5f5f7"/>
+
+  <!-- one sparkle -->
+  <path d="M29.5 8 L30.2 10.3 L32.5 11 L30.2 11.7 L29.5 14 L28.8 11.7 L26.5 11 L28.8 10.3 Z" fill="#d895b4"/>
+
+  <rect x="3.5" y="3.5" width="33" height="33" rx="9.5" fill="none" stroke="#45454e" stroke-width="1"/>
 </svg>
