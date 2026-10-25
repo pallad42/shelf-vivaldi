@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <header id="info">
+    <div id="date"></div>
+    <div id="time"></div>
+    <div id="weather" hidden></div>
+  </header>
+  <main id="page">
+    <div class="divider"><span id="space-name"></span></div>
+    <div id="viewport"><div id="track"></div></div>
+  </main>
+  <nav id="dots"></nav>
+  <nav id="actions">
+    <button id="all" title="All bookmarks">
+      <svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+    </button>
+    <button id="edit" title="Choose bookmarks">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    </button>
+  </nav>
+
+  <div id="picker" hidden>
+    <div class="panel">
+      <header>
+        <h1>Choose bookmarks</h1>
+        <button id="close">Done</button>
+      </header>
+      <div id="tree">
+        <section class="setting">
+          <span>Wallpaper</span>
+          <label class="button">Choose image<input id="wallpaper" type="file" accept="image/*" hidden></label>
+          <button id="wallpaper-clear" class="button" hidden>Remove</button>
+        </section>
+        <form class="setting" id="city-form">
+          <span>Weather city</span>
+          <input id="city-input" class="input" placeholder="e.g. Warsaw" autocomplete="off">
+          <button class="button">Save</button>
+        </form>
+        <div id="city-error" class="setting-error" hidden></div>
+        <div id="folders"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>

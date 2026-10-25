@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Shelf",
+  "version": "0.1.0",
+  "description": "A calm new tab page built from your bookmarks, with spaces, a clock and weather",
+  "author": "pallad42",
+  "homepage_url": "https://github.com/pallad42/shelf-vivaldi",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtx/TYmyyxcRZaiT2WP9HGKfFy/AbPcUnXv8HObjcqsptscr2KDiIruj39Nl97ycdJFJdRaCFX1PzGfEGAK+5qf/3qM71Z2p0c/f4URZjeqpsk5Gq5hBe+F4Ns624kOFaWa2PivB+wavTpike+eiPpX1t83pG+G7HMnnoU2kpDgWPwQYTvWHWS7QQagYvVO7Y4H6QlugkPryaETRA1ofP1oKpn9oGYyFB/ekfsDrSWBxnsyIkamgE1ZG/YFvXd3+7tXssou2LGxpnxA4hNQFTv+buor/4FunQ0f2fWxPUcjqitZSOIogPYnFTWMGZ8H+4z4OWT2rwEPNLYk5gQBC4CwIDAQAB",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "incognito": "split",
+  "permissions": [
+    "bookmarks",
+    "favicon",
+    "storage",
+    "unlimitedStorage",
+    "tabs"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
